@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/bmicalculator">BMI Calculator</a></li>
+        <li><a href="/recepten">Recipes</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h1>BMI Calculator</h1>
+    
+    <div class="input-group">
+        <label for="Weight">Weight (kg)</label>
+        <input id="Weight" type="number" placeholder="Enter how fat">
+    </div>
+    
+    <div class="input-group">
+        <label for="Height">Height (cm)</label>
+        <input id="Height" type="number" placeholder="Enter how high you are">
+    </div>
+
+    <div class="btn-container">
+        <button class="btn-submit" onclick="calculateBMI()">Calculate</button>
+        <button class="btn-clear" onclick="clearFields()">Clear</button>
+    </div>
+
+    <div class="result-box">
+        <p id='heading'>Enter "Credit Card" Information</p>
+        <p id='bmi-output'>--</p>
+        <span id='message'></span>
+    </div>
+</div>
+
+<script src="/js/bmi.js"></script>
+</body>
+</html>

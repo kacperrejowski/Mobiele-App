@@ -1,0 +1,319 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #bababa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+ 
+/* Navigation Bar */
+.navbar {
+    background-color: #ffffff;
+    padding: 14px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.navbar li {
+    margin: 0 15px;
+}
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+}
+.navbar a:hover {
+    color: #3cc800;
+}
+
+ 
+/* Calculator Container Card */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    text-align: center;
+}
+ 
+.container1 {
+    max-width: 1400px;
+    margin: 50px;
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    text-align: left; 
+}
+ 
+h1 {
+    color: #242424;
+    margin-bottom: 25px;
+}
+ 
+/* Input Styling */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+ 
+.imag {
+    display: block;
+    margin: 20px;
+    max-width: 100%;
+}
+ 
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+input[type="number"]:focus {
+    border-color: #1abc9c;
+    outline: none;
+}
+ 
+/* Button Styling */
+.btn-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+}
+button:active {
+    transform: scale(0.98);
+}
+.btn-submit {
+    background-color: #35ff08;
+    color: white;
+}
+.btn-submit:hover {
+    background-color: #2da312;
+}
+.btn-clear {
+    background-color: #ff0000;
+    color: white;
+}
+.btn-clear:hover {
+    background-color: #b10101;
+}
+ 
+/* Result Presentation */
+.result-box {
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+}
+#heading {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin: 0;
+}
+#bmi-output {
+    font-size: 42px;
+    font-weight: bold;
+    color: #000000;
+    margin: 10px 0;
+}
+ 
+/* Dynamic Status Badges */
+.status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.underweight { background-color: #ffcc00; color: #fff; }
+.normal { background-color: #33ff00; color: #fff; }
+.overweight { background-color: #ff8922; color: #fff; }
+.obese { background-color: #ff1900; color: #fff; }
+ 
+.toptext {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 24px;
+}
+ 
+.search-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+ 
+input, button { 
+  padding: 10px; 
+  margin: 5px 0; 
+  width: 60%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+ 
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+ 
+button:hover { 
+  background-color: #218838; 
+}
+ 
+/* Styling for the results */
+.recipe-card { 
+  background: white;
+  border: 1px solid #ddd; 
+  padding: 15px; 
+  margin-bottom: 15px; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+ 
+.recipe-card h3 { 
+  margin: 0 0 10px 0; 
+  color: #333; 
+}
+ 
+.recipe-card a { 
+  display: inline-block; 
+  margin-top: 10px; 
+  color: white; 
+  background: #007bff; 
+  padding: 8px 12px; 
+  text-decoration: none; 
+  border-radius: 4px; 
+  font-size: 14px;
+}
+ 
+.recipe-card a:hover { 
+  background: #0056b3; 
+}
+ 
+.ingredient-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+}
+ 
+.ingredient-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    overflow: hidden;
+    text-align: center;
+}
+ 
+.ingredient-card .imag-wrap {
+    position: relative;
+}
+ 
+.ingredient-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+ 
+.upper-amount {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ffffff00;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 13px;
+    padding: 4px 10px;
+}
+ 
+.ingredient-card h3 {
+    margin: 15px 0 18px;
+    color: #242424;
+    font-size: 18px;
+}
+ 
+.verdict-section {
+    max-width: 900px;
+    margin: 0 auto 50px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+ 
+.verdict-section img {
+    width: 100%;
+    display: block;
+    max-height: 380px;
+    object-fit: cover;
+}
+ 
+.verdict-section .verdict-text {
+    padding: 25px 30px;
+}
+ 
+.verdict-section .verdict-text p {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #333;
+}
+ 
+.verdict-section .verdict-text p:last-child {
+    margin-bottom: 0;
+    color: #7f8c8d;
+}
+ 
+@media (min-width: 640px) {
+    .ingredient-grid { grid-template-columns: repeat(2, 1fr); }
+}
+ 
+@media (min-width: 980px) {
+    .ingredient-grid { grid-template-columns: repeat(3, 1fr); }
+    .verdict-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    .verdict-section .verdict-text {
+        border-top: none;
+    }
+}
